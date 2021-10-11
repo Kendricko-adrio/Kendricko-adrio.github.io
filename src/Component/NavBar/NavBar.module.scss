@@ -1,0 +1,54 @@
+@import "src/index";
+
+.navbar{
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  justify-content: space-evenly;
+  width: fit-content;
+  position: fixed;
+  height: 100%;
+  padding: 20px;
+  top: 0;
+  left: 0;
+
+  .component{
+    background-color: $third-color;
+    border-radius: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    img{
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .componentarrow{
+    background-color: $second-color;
+    opacity: 0.3;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    img{
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  &:hover{
+    background-color: rgba(0,0,0,0.2);
+    .component{
+      display: flex;
+    }
+    .componentarrow{
+      display: none;
+    }
+  }
+}
+

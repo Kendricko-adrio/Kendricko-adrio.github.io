@@ -1,0 +1,14 @@
+@import "src/index";
+
+
+.main{
+  background-color: $background-color;
+  color: $font-color;
+  height: 100%;
+  position: relative;
+}
+
+.parallax{
+  background: url("../../Assets/space3.jpg") no-repeat;
+  background-size: contain;
+}

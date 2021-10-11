@@ -1,0 +1,21 @@
+@import "src/index";
+
+.education{
+  height: 110vh;
+  padding: 10% 10% 0 10%;
+}
+
+.fadeOut{
+  opacity:0;
+  width:0;
+  height:0;
+  transition: width 0.2s 0.2s, height 0.2s 0.2s, opacity 0.2s;
+
+}
+.fadeIn{
+  opacity:1;
+  width:100px;
+  height:100px;
+  transition: width 0.2s, height 0.2s, opacity 0.2s 0.2s;
+
+}

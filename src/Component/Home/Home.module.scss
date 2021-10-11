@@ -1,0 +1,18 @@
+@import "src/index";
+
+.home{
+  height: 100vh;
+  font-family: $font-family;
+  padding: 0 10% 0 10%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  //background-color: red;
+    .header{
+      font-size: 2rem;
+    }
+}
+
+
+
