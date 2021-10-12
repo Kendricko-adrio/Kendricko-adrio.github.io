@@ -1,0 +1,79 @@
+@import "src/index";
+
+.education{
+  height: 110vh;
+  padding: 5% 10% 0 10%;
+}
+
+.header{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+.profile{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 40%;
+
+  .component{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: white solid 1px;
+    padding: 10px 0 10px 0;
+    .title{
+      font-size: 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .description{
+      font-size: 1.2rem;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+    }
+  }
+  ul > li{
+    text-align: right;
+  }
+}
+
+.bottom{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 10vh;
+  font-size: 1.3rem;
+  .sosmed{
+    display: flex;
+    justify-content: center;
+    a{
+      width: 75px;
+      img{
+        width: 75px;
+      }
+    }
+
+  }
+}
+
+.fadeOut{
+  opacity:0;
+  //width:0;
+  //height:0;
+  transition: width 0.2s 0.2s, height 0.2s 0.2s, opacity 0.2s;
+
+}
+.fadeIn{
+  opacity:1;
+  //width:100px;
+  height:100px;
+  transition: width 0.2s, height 0.2s, opacity 0.2s 0.2s;
+
+}

@@ -15,11 +15,14 @@
   .component{
     background-color: $third-color;
     border-radius: 100%;
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 50px;
     width: 50px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
     img{
       width: 30px;
       height: 30px;
@@ -35,6 +38,7 @@
     align-items: center;
     height: 50px;
     width: 50px;
+
     img{
       width: 30px;
       height: 30px;
@@ -44,6 +48,8 @@
   &:hover{
     background-color: rgba(0,0,0,0.2);
     .component{
+      visibility: visible;
+      opacity: 1;
       display: flex;
     }
     .componentarrow{

@@ -19,11 +19,10 @@ const NavBar: React.FC<Props> = ({refs}: Props) => {
     //         return;
     //     }
     // });
-
+    console.log(refs);
     const click = (ref: MutableRefObject<HTMLDivElement | null>) => {
         console.log(ref);
         if (ref.current === null) {
-
             console.log('hai');
             return;
         }
@@ -32,17 +31,16 @@ const NavBar: React.FC<Props> = ({refs}: Props) => {
 
     return (
         <section className={style.navbar}>
-
-            <div className={style.componentarrow}>
-                <img src={arrow} alt=""/>
-            </div>
             <div className={style.component} onClick={() => click(refs[0])}>
             {/*<div className={style.component}>*/}
                 <img src={home} alt=""/>
             </div>
 
-            <div className={style.component}>
+            <div className={style.component} onClick={() => click(refs[1])}>
                 <img src={education}/>
+            </div>
+            <div className={style.componentarrow}>
+                <img src={arrow} alt=""/>
             </div>
             <div className={style.component}>
                 <img src={skill}/>

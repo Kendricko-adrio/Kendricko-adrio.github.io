@@ -4,7 +4,7 @@ import space from '../../Assets/space3.jpg';
 import {Parallax} from 'react-parallax';
 
 
-const Home= forwardRef<HTMLElement>((_, ref) => {
+const Home = forwardRef<HTMLElement>((_, ref) => {
     {
 
         // const home = document.getElementById('home');
