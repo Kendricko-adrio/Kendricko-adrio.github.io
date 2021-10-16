@@ -13,34 +13,51 @@
   font-size: 3rem;
 }
 
-.profile{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.data{
   height: 40%;
-
-  .component{
-    display: flex;
-    justify-content: space-between;
-    border-bottom: white solid 1px;
-    padding: 10px 0 10px 0;
-    .title{
-      font-size: 1.5rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .description{
-      font-size: 1.2rem;
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
-    }
+  display: flex;
+  img{
+    //width: 20%;
+    //height: 80%;
+    border-radius: 200px;
+    border: white solid 2px;
+    align-self: center;
+    margin-right: 5%;
+    display: block;
+    width: 190px;
+    height: 200px;
   }
-  ul > li{
-    text-align: right;
+
+  .profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 75%;
+
+    .component{
+      display: flex;
+      justify-content: space-between;
+      border-bottom: white solid 1px;
+      padding: 10px 0 10px 0;
+      .title{
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .description{
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+      }
+    }
+    ul > li{
+      text-align: right;
+    }
   }
 }
+
 
 .bottom{
   display: flex;
@@ -67,13 +84,12 @@
   opacity:0;
   //width:0;
   //height:0;
-  transition: width 0.2s 0.2s, height 0.2s 0.2s, opacity 0.2s;
+  transition: opacity 0.2s ease-in;
 
 }
 .fadeIn{
   opacity:1;
-  //width:100px;
-  height:100px;
-  transition: width 0.2s, height 0.2s, opacity 0.2s 0.2s;
+
+  transition: opacity 0.2s 0.2s ease-in;
 
 }
