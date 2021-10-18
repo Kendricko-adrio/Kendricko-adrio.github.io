@@ -42,11 +42,11 @@ const NavBar: React.FC<Props> = ({refs}: Props) => {
             <div className={style.componentarrow}>
                 <img src={arrow} alt=""/>
             </div>
-            <div className={style.component}>
-                <img src={skill}/>
+            <div className={style.component} onClick={() => click(refs[2])}>
+                <img src={project}/>
             </div>
             <div className={style.component}>
-                <img src={project}/>
+                <img src={skill}/>
             </div>
             <div className={style.component}>E</div>
         </section>

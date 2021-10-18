@@ -1,0 +1,21 @@
+.project{
+  min-height: 100vh;
+  height: 100%;
+  padding: 5% 10% 5% 10%;
+  display: flex;
+  flex-direction: column;
+
+  .title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    margin-bottom: 50px;
+  }
+  .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}

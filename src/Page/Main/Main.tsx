@@ -5,12 +5,14 @@ import space from "../../Assets/space3.jpg";
 import {Parallax, Background} from 'react-parallax';
 import Profile from "../../Component/Profile/Profile";
 import {useEffect, useRef, useState} from "react";
+import Project from "../../Component/Project/Project";
 
 const MainPage: React.FC = () => {
     const homeRef = useRef<HTMLDivElement | null>(null);
     const profileRef = useRef<HTMLDivElement | null>(null);
+    const projectRef = useRef<HTMLDivElement | null>(null);
     // const educationRef = useRef<HTMLDivElement | null>();
-    const refs = [homeRef, profileRef];
+    const refs = [homeRef, profileRef, projectRef];
     const [scrollY, setScrollY] = useState(0);
     useEffect(() => {
         console.log(scrollY);
@@ -27,8 +29,7 @@ const MainPage: React.FC = () => {
             >
                 <Home ref={homeRef}/>
                 <Profile ref={profileRef}/>
-                <div style={{height: '100vh'}}>
-                </div>
+                <Project ref={projectRef}/>
 
             </Parallax>
 
