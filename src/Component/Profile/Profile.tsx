@@ -14,14 +14,12 @@ const Profile = forwardRef<HTMLElement>((_, ref) => {
     {
         const [scrollY, setScrollY] = useState(0);
         const [isFocus, setIsFocus] = useState(false);
-        // const [isPictureIntersect, setIsIntersect] = useState(false);
 
-        const photoRef = useRef<HTMLDivElement>(null);
-
-        // const [isPhotoIntersect, setPhotoIntersect] = useState(false);
-
-        // let isPhotoIntersect = intersectionHandler(photoRef.current, "-100px");
-        const [divRef, isPhotoIntersect] = intersectionHandler("-100px");
+        const [divRef, isPhotoIntersect] = intersectionHandler("0px");
+        const [nameRef, isNameIntersect] = intersectionHandler("0px");
+        const [educationRef, isEducationIntersect] = intersectionHandler("0px");
+        const [jobRef, isJobIntersect] = intersectionHandler("0px");
+        const [findRef, isFindIntersect] = intersectionHandler("0px");
         console.log('intersect : ' + isPhotoIntersect);
         useEffect(() => {
             // setScrollY(scrollY * 0.5);
@@ -31,7 +29,7 @@ const Profile = forwardRef<HTMLElement>((_, ref) => {
             } else {
                 setIsFocus(false);
             }
-        }, [scrollY, isPhotoIntersect]);
+        }, [scrollY]);
 
         return (
             <Parallax
@@ -53,20 +51,20 @@ const Profile = forwardRef<HTMLElement>((_, ref) => {
                         <div className={`${isFocus ? styles.fadeIn : styles.fadeOut} ${styles.header}`}>
                             Profile
                         </div>
-                        <div className={styles.data} ref={divRef as React.RefObject<HTMLDivElement>}>
-                            <img src={myphoto}  className={`${isPhotoIntersect ? styles.fadeIn : styles.fadeOut}`}/>
+                        <div className={styles.data} >
+                            <img src={myphoto}  ref={divRef as React.RefObject<HTMLImageElement>} className={`${isPhotoIntersect ? styles.fadeIn : styles.fadeOut}`}/>
                             <div className={`${styles.profile} ${isPhotoIntersect ? styles.fadeIn : styles.fadeOut}`}>
-                                <div className={styles.component}>
+                                <div ref={nameRef as React.RefObject<HTMLDivElement>} className={`${styles.component} ${isNameIntersect ? styles.fadeIn : styles.fadeOut}`}  >
                                     <div className={styles.title}>Name:</div>
                                     <div className={styles.description}>Kendricko Adrio</div>
                                 </div>
-                                <div className={styles.component}>
+                                <div ref={educationRef as React.RefObject<HTMLDivElement>} className={`${styles.component} ${isEducationIntersect ? styles.fadeIn : styles.fadeOut}`}>
                                     <div className={styles.title}>Education:</div>
                                     <div className={styles.description}>Undergraduate Computer Science Student At Bina
                                         Nusantara
                                     </div>
                                 </div>
-                                <div className={styles.component}>
+                                <div ref={jobRef as React.RefObject<HTMLDivElement>} className={`${styles.component} ${isJobIntersect ? styles.fadeIn : styles.fadeOut}`}>
                                     <div className={styles.title}>Job:</div>
                                     <div className={styles.description}>
                                         <ul>
@@ -77,7 +75,7 @@ const Profile = forwardRef<HTMLElement>((_, ref) => {
                                 </div>
                             </div>
                         </div>
-                        <div className={`${isPhotoIntersect ? styles.fadeIn : styles.fadeOut} ${styles.bottom}`}>
+                        <div ref={findRef as React.RefObject<HTMLDivElement>} className={`${isFindIntersect ? styles.fadeIn : styles.fadeOut} ${styles.bottom}`}>
                             <div>You can find me at</div>
                             <div className={styles.sosmed}>
                                 <a href={"https://www.linkedin.com/in/kendricko-adrio-5334bb158/"}>

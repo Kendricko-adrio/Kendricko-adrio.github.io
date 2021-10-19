@@ -48,7 +48,6 @@ const NavBar: React.FC<Props> = ({refs}: Props) => {
             <div className={style.component}>
                 <img src={skill}/>
             </div>
-            <div className={style.component}>E</div>
         </section>
     )
 }

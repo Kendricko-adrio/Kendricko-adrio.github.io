@@ -2,6 +2,7 @@ import book from "../Assets/book-kn.png";
 import konnect from "../Assets/konnect.jpg";
 import green from "../Assets/greenworld.png";
 import front from "../Assets/staem-f.png";
+import tempo from "../Assets/tempography.png";
 
 interface ProjectDetail {
     image: string,
@@ -47,6 +48,12 @@ const getAllProject = () => {
             desc: "This is the backend of the Staem web. I build it using go programming language with gqlgen as a framework. This backend is using graphql to fetch data and also websocket to handle realtime chat",
             webLink: "https://staem-kn.herokuapp.com/",
             codeLink: "https://github.com/Kendricko-adrio/TPA-Web-Backend",
+        },
+        {
+            image: tempo,
+            title: "Tempography",
+            desc: "This is a Project that me and my partner build for Software Engineering Assignment. Tempography is a website for selling photo using Laravel Framework",
+            codeLink: "https://github.com/Kendricko-adrio/SE-Tempography",
         },
     ];
 //https://staem-kn.netlify.app/
