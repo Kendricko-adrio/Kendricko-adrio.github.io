@@ -39,12 +39,14 @@ const getAllProject = () => {
             title: "Staem(Frontend)",
             desc: "Staem is the clone of steam. Staem is an assesment that i have to take when i was a laboratory assistant using Angular as the framework",
             webLink: "https://staem-kn.netlify.app/",
+            codeLink: "https://github.com/Kendricko-adrio/TPA-Web-Frontend"
         },
         {
             image: front,
             title: "Staem(Backend)",
             desc: "This is the backend of the Staem web. I build it using go programming language with gqlgen as a framework. This backend is using graphql to fetch data and also websocket to handle realtime chat",
             webLink: "https://staem-kn.herokuapp.com/",
+            codeLink: "https://github.com/Kendricko-adrio/TPA-Web-Backend",
         },
     ];
 //https://staem-kn.netlify.app/

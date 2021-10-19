@@ -2,6 +2,7 @@ import styles from './Home.module.scss';
 import {forwardRef, MutableRefObject, useEffect, useState} from "react";
 import space from '../../Assets/space3.jpg';
 import {Parallax} from 'react-parallax';
+import {GetCanvas} from "./Canvas/canvas";
 
 
 const Home = forwardRef<HTMLElement>((_, ref) => {
@@ -15,6 +16,8 @@ const Home = forwardRef<HTMLElement>((_, ref) => {
             setOffsetY(window.pageYOffset);
         };
 
+        const canvasRef = GetCanvas();
+
         useEffect(() => {
             window.addEventListener('scroll', scrollHandle);
 
@@ -24,6 +27,7 @@ const Home = forwardRef<HTMLElement>((_, ref) => {
         return (
 
             <section ref={ref} className={styles.home} id={"home"}>
+                <canvas ref={canvasRef} id={styles.canvas}/>
 
                 <div className={styles.header} style={{transform: `translateY(-${offsetY * 0.7}px)`}}>
                     Hello World, My Name

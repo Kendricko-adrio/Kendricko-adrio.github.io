@@ -9,6 +9,14 @@
   flex-direction: column;
   justify-content: center;
   //background-color: red;
+  #canvas{
+    top: 0;
+    left: 0;
+    position: absolute;
+    //width: 100vw;
+    //height: 100vh;
+    background-color: $background-color;
+  }
     .header{
       font-size: 2rem;
     }
