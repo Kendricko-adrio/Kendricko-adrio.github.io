@@ -3,6 +3,9 @@ import konnect from "../Assets/konnect.jpg";
 import green from "../Assets/greenworld.png";
 import front from "../Assets/staem-f.png";
 import tempo from "../Assets/tempography.png";
+import wishforyou from "../Assets/wishforyou.jpg";
+import manageme from "../Assets/manageme.png";
+import chat from "../Assets/chat.jpg";
 
 interface ProjectDetail {
     image: string,
@@ -55,6 +58,26 @@ const getAllProject = () => {
             desc: "This is a Project that me and my partner build for Software Engineering Assignment. Tempography is a website for selling photo using Laravel Framework",
             codeLink: "https://github.com/Kendricko-adrio/SE-Tempography",
         },
+        {
+            image: wishforyou,
+            title: "Wishforyou",
+            desc: "My Second job as a fullstack part time job. My task is to maintain existing logic and also create new features",
+            webLink: "https://www.wishforyou.com/"
+        },
+        {
+            image: manageme,
+            title: "Manage Me",
+            desc: "Project for Huawei development bootcamp. Created by Kendricko Adrio and Agung Yuwono Sugijono",
+            webLink: "https://appgallery.huawei.com/app/C105308615",
+            codeLink: "https://github.com/Kendricko-adrio/manage-me"
+        },
+        {
+            image: chat,
+            title: "Chat App (Backend)",
+            desc: "Try to make chat application using Go Programming Language and Websocket as real-time protocol (Still on development)",
+            codeLink: "https://github.com/Kendricko-adrio/go-chatapp"
+        },
+        
     ];
 //https://staem-kn.netlify.app/
     return data;

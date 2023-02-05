@@ -11,6 +11,7 @@ import intersectionHandler from "../../Handler/intersectionHandler";
 // const Profile: React.FC = () => {
 
 const Profile = forwardRef<HTMLElement>((_, ref) => {
+    // eslint-disable-next-line no-lone-blocks
     {
         const [scrollY, setScrollY] = useState(0);
         const [isFocus, setIsFocus] = useState(false);
@@ -69,7 +70,8 @@ const Profile = forwardRef<HTMLElement>((_, ref) => {
                                     <div className={styles.description}>
                                         <ul>
                                             <li>Ex: Assistant Laboratory At Binus Alam Sutera</li>
-                                            <li>Current: Operations & System Development At Binus Alam Sutera</li>
+                                            <li>Ex: Operations & System Development At Binus Alam Sutera</li>
+                                            <li>Current: Software Engineer at Bank Central Asia</li>
                                         </ul>
                                     </div>
                                 </div>
