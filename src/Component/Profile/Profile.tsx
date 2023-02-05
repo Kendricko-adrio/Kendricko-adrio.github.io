@@ -71,7 +71,7 @@ const Profile = forwardRef<HTMLElement>((_, ref) => {
                                         <ul>
                                             <li>Ex: Assistant Laboratory At Binus Alam Sutera</li>
                                             <li>Ex: Operations & System Development At Binus Alam Sutera</li>
-                                            <li>Current: Software Engineer at Bank Central Asia</li>
+                                            <li>Current: Software Engineer Intern at Bank Central Asia</li>
                                         </ul>
                                     </div>
                                 </div>
