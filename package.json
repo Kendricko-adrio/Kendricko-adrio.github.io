@@ -1,11 +1,8 @@
 {
-  "homepage": "https://kendricko-adrio.github.io/Kendricko-adrio.github.io",
-  "name": "Kendricko-adrio.github.io",
+
   "version": "0.1.0",
   "private": true,
-  "engines": {
-    "node": "14.x"
-  },
+
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
@@ -25,9 +22,8 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-scripts --openssl-legacy-provider start",
+    "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -48,8 +44,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^3.2.3"
   }
 }
