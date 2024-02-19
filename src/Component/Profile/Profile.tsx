@@ -61,7 +61,7 @@ const Profile = forwardRef<HTMLElement>((_, ref) => {
                                 </div>
                                 <div ref={educationRef as React.RefObject<HTMLDivElement>} className={`${styles.component} ${isEducationIntersect ? styles.fadeIn : styles.fadeOut}`}>
                                     <div className={styles.title}>Education:</div>
-                                    <div className={styles.description}>Undergraduate Computer Science Student At Bina
+                                    <div className={styles.description}>Bachelor of Computer Science Student At Bina
                                         Nusantara
                                     </div>
                                 </div>
@@ -71,7 +71,7 @@ const Profile = forwardRef<HTMLElement>((_, ref) => {
                                         <ul>
                                             <li>Ex: Assistant Laboratory At Binus Alam Sutera</li>
                                             <li>Ex: Operations & System Development At Binus Alam Sutera</li>
-                                            <li>Current: Software Engineer Intern at Bank Central Asia</li>
+                                            <li>Current: Software Engineer at Bank Central Asia</li>
                                         </ul>
                                     </div>
                                 </div>

@@ -35,23 +35,23 @@ const getAllProject = () => {
         {
             image: green,
             title: "Green World Global",
-            desc: "My first job as a freelancer web developer with 2 of my friends(Still under development)",
+            desc: "My first job as a freelancer web developer with 2 of my friends",
             webLink: "http://greenworldglobal.co.id/",
         },
-        {
-            image: front,
-            title: "Staem(Frontend)",
-            desc: "Staem is the clone of steam. Staem is an assesment that i have to take when i was a laboratory assistant using Angular as the framework",
-            webLink: "https://staem-kn.netlify.app/",
-            codeLink: "https://github.com/Kendricko-adrio/TPA-Web-Frontend"
-        },
-        {
-            image: front,
-            title: "Staem(Backend)",
-            desc: "This is the backend of the Staem web. I build it using go programming language with gqlgen as a framework. This backend is using graphql to fetch data and also websocket to handle realtime chat",
-            webLink: "https://staem-kn.herokuapp.com/",
-            codeLink: "https://github.com/Kendricko-adrio/TPA-Web-Backend",
-        },
+        // {
+        //     image: front,
+        //     title: "Staem(Frontend)",
+        //     desc: "Staem is the clone of steam. Staem is an assesment that i have to take when i was a laboratory assistant using Angular as the framework",
+        //     webLink: "https://staem-kn.netlify.app/",
+        //     codeLink: "https://github.com/Kendricko-adrio/TPA-Web-Frontend"
+        // },
+        // {
+        //     image: front,
+        //     title: "Staem(Backend)",
+        //     desc: "This is the backend of the Staem web. I build it using go programming language with gqlgen as a framework. This backend is using graphql to fetch data and also websocket to handle realtime chat",
+        //     webLink: "https://staem-kn.herokuapp.com/",
+        //     codeLink: "https://github.com/Kendricko-adrio/TPA-Web-Backend",
+        // },
         {
             image: tempo,
             title: "Tempography",
